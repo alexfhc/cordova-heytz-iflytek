@@ -35,7 +35,7 @@
         //设置最长录音时间
         [iFlySpeechRecognizer setParameter:instance.speechTimeout forKey:[IFlySpeechConstant SPEECH_TIMEOUT]];
         //设置后端点
-        [iFlySpeechRecognizer setParameter:instance.vadEos forKey:[IFlySpeechConstant VAD_EOS]];
+        [iFlySpeechRecognizer setParameter:@"1000" forKey:[IFlySpeechConstant VAD_EOS]];
         //设置前端点
         [iFlySpeechRecognizer setParameter:instance.vadBos forKey:[IFlySpeechConstant VAD_BOS]];
         //网络等待时间
